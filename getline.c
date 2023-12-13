@@ -8,7 +8,7 @@
 
 char *get_input(void)
 {
-	char* linep = NULL;
+	char *linep = NULL;
 	size_t linecapp = 0;
 	ssize_t char_len;
 
