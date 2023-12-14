@@ -4,6 +4,7 @@
 
 This project involves creating a simple UNIX command-line interpreter that reads commands from either a file or standard input and executes them.
 
+editing 
 #### List of allowed functions and system calls :
 
 ```
