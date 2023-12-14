@@ -14,7 +14,7 @@ extern char **environ;
 /* main functions */
 char *get_input(void);
 char **_splitter(char *linep);
-int run_inpt(char **inpt, char **av);
+int run_inpt(char **inpt, char **av, int id);
 char *_gpath(char *inpt);
 char *_genv(char *variable);
 char *_itoa(int n);
