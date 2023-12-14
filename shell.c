@@ -32,8 +32,14 @@ int main(int ac, char **av)
 		inpt = _splitter(linep);
 		if (!inpt)
 			continue;
-		/* run the input using execve */
-		stats = run_inpt(inpt, av, id);
+		if (builtins_checker(inpt[0]))
+		{
+			builtin_execute(inpt, av, &stats, id);
+		}
+		else
+		{
+			stats = run_inpt(inpt, av, id);
+		}
 	} while (1);
 }
 

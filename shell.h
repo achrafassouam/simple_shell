@@ -28,6 +28,12 @@ char *_itoa(int n);
 int _strlen(char *s);
 int _strcmp(char *s1, char *s2);
 
+/* builtins */
+int builtins_checker(char *inpt);
+void builtin_execute(char **inpt, char **av, int *stats, int id);
+void exit_builtin(char **inpt, int *stats);
+void env_builtin(char **inpt, int *stats);
+
 /* extra functions */
 void free_adv(char **arr);
 void free_null(char *str);
