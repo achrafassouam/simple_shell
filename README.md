@@ -4,7 +4,9 @@
 
 This project involves creating a simple UNIX command-line interpreter that reads commands from either a file or standard input and executes them.
 
-editing 
+This project was designed to help us learn the fundamentals of shell programming and gain experience with low-level system programming concepts.
+
+ 
 #### List of allowed functions and system calls :
 
 ```
