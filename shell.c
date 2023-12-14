@@ -13,6 +13,7 @@ int main(int ac, char **av)
 	char *linep = NULL;
 	char **inpt = NULL;
 	int stats = 0;
+	int id = 0;
 	(void)ac;
 
 	do {
@@ -26,12 +27,13 @@ int main(int ac, char **av)
 			}
 			return (stats);
 		}
+		id++;
 		/* split input using strtok */
 		inpt = _splitter(linep);
 		if (!inpt)
 			continue;
 		/* run the input using execve */
-		stats = run_inpt(inpt, av);
+		stats = run_inpt(inpt, av, ad);
 	} while (1);
 }
 
