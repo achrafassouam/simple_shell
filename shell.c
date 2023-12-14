@@ -33,7 +33,7 @@ int main(int ac, char **av)
 		if (!inpt)
 			continue;
 		/* run the input using execve */
-		stats = run_inpt(inpt, av, ad);
+		stats = run_inpt(inpt, av, id);
 	} while (1);
 }
 

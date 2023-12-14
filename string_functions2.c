@@ -12,7 +12,7 @@ void _perror(char *name, char *cmd, int id)
 {
 	char *index, mssg[] = ": not found\n";
 
-	index = _itoa(idx);
+	index = _itoa(id);
 
 	write(STDERR_FILENO, name, _strlen(name));
 	write(STDERR_FILENO, ": ", 2);
