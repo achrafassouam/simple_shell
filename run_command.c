@@ -4,6 +4,7 @@
  * run_inpt - run the code using execve
  * @inpt: command
  * @av: array of string
+ * @id: index
  *
  * Return: exit status
  */
